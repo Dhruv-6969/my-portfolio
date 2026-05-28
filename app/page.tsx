@@ -16,13 +16,16 @@ const longVideos = [
   { id: 3, videoSrc: "/finance3.mp4", title: "Why your savings lose money", category: "Macro", duration: "6:18" },
 ]
 
+const motionShorts = [
+  { id: 1, videoSrc: "https://drive.google.com/file/d/18C0MQYcTyVbA7OVw7BvXKeKF10Ge2hsj/preview", title: "Payment Gateway", tag: "Motion" },
+  { id: 2, videoSrc: "/motion2.mp4", title: "Text Animation", tag: "Motion" },
+  { id: 3, videoSrc: "/motion3.mp4", title: "Intro Sequence", tag: "Motion" },
+  { id: 4, videoSrc: "/motion4.mp4", title: "Transition Pack", tag: "Motion" },
+]
+
 const clients = [
   { id: 1, name: "Ridey Behl", handle: "@rideyay", what: "Have edited several short-form content", instagram: "https://www.instagram.com/rideyay?igsh=a3MwZWM4MGxva3I1" },
   { id: 2, name: "Deepika Mishra", handle: "@medeeepika", what: "Have edited a Long form content for YouTube", instagram: "https://www.instagram.com/medeeepika?igsh=MXV3cHhocHo4aWFsZg==" },
-  { id: 3, name: "Client Name", handle: "@handle", what: "Launch video + social media cuts", instagram: "https://instagram.com/handle" },
-  { id: 4, name: "Client Name", handle: "@handle", what: "Motion graphics & lower thirds package", instagram: "https://instagram.com/handle" },
-  { id: 5, name: "Client Name", handle: "@handle", what: "Event aftermovie + highlight reel", instagram: "https://instagram.com/handle" },
-  { id: 6, name: "Client Name", handle: "@handle", what: "Finance explainer series, 6 episodes", instagram: "https://instagram.com/handle" },
 ]
 
 export default function Home() {
@@ -71,17 +74,28 @@ export default function Home() {
         </div>
       </section>
 
+      {/* MOTION GRAPHICS */}
+      <section id="motion" style={{ padding: '5rem 3rem' }}>
+        <p style={{ fontSize: '0.7rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--accent2)', marginBottom: '0.5rem' }}>Motion Graphics</p>
+        <h2 style={{ fontFamily: 'Bebas Neue', fontSize: 'clamp(1.8rem,4vw,3rem)', marginBottom: '3rem', borderBottom: '0.5px solid var(--border)', paddingBottom: '1rem' }}>
+          Motion & Animation
+        </h2>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1rem' }}>
+          {motionShorts.map(s => <ShortCard key={s.id} {...s} />)}
+        </div>
+      </section>
+
       {/* CLIENTS */}
-      <section id="clients" style={{ padding: '5rem 3rem' }}>
+      <section id="clients" style={{ padding: '5rem 3rem', background: 'var(--surface)' }}>
         <p style={{ fontSize: '0.7rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--accent2)', marginBottom: '0.5rem' }}>Experience</p>
         <h2 style={{ fontFamily: 'Bebas Neue', fontSize: 'clamp(1.8rem,4vw,3rem)', marginBottom: '3rem', borderBottom: '0.5px solid var(--border)', paddingBottom: '1rem' }}>
           Who I&apos;ve Worked With
         </h2>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1px', background: 'var(--border)' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1px', background: 'var(--border)' }}>
           {clients.map(c => (
-            <div key={c.id} style={{ background: 'var(--bg)', padding: '2rem' }}>
+            <div key={c.id} style={{ background: 'var(--bg)', padding: '2.5rem' }}>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.25rem' }}>
-                <p style={{ fontFamily: 'Bebas Neue', fontSize: '1.4rem', letterSpacing: '0.04em', color: 'var(--text)' }}>
+                <p style={{ fontFamily: 'Bebas Neue', fontSize: '1.6rem', letterSpacing: '0.04em', color: 'var(--text)' }}>
                   {c.name}
                 </p>
                 <a
