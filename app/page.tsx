@@ -11,7 +11,7 @@ const shorts = [
 ]
 
 const longVideos = [
-  { id: 1, videoSrc: "https://drive.google.com/file/d/1JSEoYMAE6MRV__GhUDkN6R1AxBedxdDr/preview", title: "I Became Shizuka and Went on a Date", category: "Entertainment", duration: "08:04" },
+  { id: 1, videoSrc: "https://drive.google.com/file/d/1JSEoYMAE6MRV__GhUDkN6R1AxBedxdDr/preview", title: "I Became Shizuka and Went on a Date", category: "Entertainment", duration: "8:04" },
   { id: 2, videoSrc: "/finance2.mp4", title: "Asset allocation guide", category: "Investing", duration: "8:32" },
   { id: 3, videoSrc: "/finance3.mp4", title: "Why your savings lose money", category: "Macro", duration: "6:18" },
 ]
