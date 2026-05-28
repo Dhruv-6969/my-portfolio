@@ -1,3 +1,5 @@
+"use client"
+
 import VideoCard from './components/VideoCard'
 import ShortCard from './components/ShortCard'
 
