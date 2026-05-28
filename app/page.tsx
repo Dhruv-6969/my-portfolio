@@ -25,7 +25,7 @@ const motionShorts = [
 
 const clients = [
   { id: 1, name: "Ridey Behl", handle: "@rideyay", what: "Have edited several short-form content", instagram: "https://www.instagram.com/rideyay?igsh=a3MwZWM4MGxva3I1" },
-  { id: 2, name: "Deepika Mishra", handle: "@medeeepika", what: "Have edited a Long form content for YouTube", instagram: "https://www.instagram.com/medeeepika?igsh=MXV3cHhocHo4aWFsZg==" },
+  { id: 2, name: "Deepika Mishra", handle: "@medeeepika", what: "Have edited Long form content for YouTube", instagram: "https://www.instagram.com/medeeepika?igsh=MXV3cHhocHo4aWFsZg==" },
 ]
 
 export default function Home() {
