@@ -5,7 +5,7 @@ import ShortCard from './components/ShortCard'
 
 const shorts = [
   { id: 1, videoSrc: "https://drive.google.com/file/d/1CLaKPRXSlQ82PNvin8Ez8ROxigiSiodz/preview", title: "Why Savers are LOSERS", tag: "Finance" },
-  { id: 2, videoSrc: "/short2.mp4", title: "Gym Motivation", tag: "Sport" },
+  { id: 2, videoSrc: "https://drive.google.com/file/d/1rDjC9vgJGW9-2JMsBcAlIViMDTK-QLkJ/preview", title: "BRU COFFEE PROMO", tag: "Promotion & Entertainment" },
   { id: 3, videoSrc: "/short3.mp4", title: "Event Aftermovie", tag: "Events" },
   { id: 4, videoSrc: "/short4.mp4", title: "Tech Reveal", tag: "Tech" },
 ]
